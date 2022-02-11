@@ -63,13 +63,16 @@
             </header>
             <ul class="sidebar__list">
                 <li class="sidebar__item">
-                    <a href="#" class="sidebar__link">Home</a>
+                    <a href="#" class="sidebar__link sidebar__link--active">Home</a>
                 </li>
                 <li class="sidebar__item">
                     <a href="#" class="sidebar__link">Posts</a>
                 </li>
                 <li class="sidebar__item">
                     <a href="#" class="sidebar__link">Reviews</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">About</a>
                 </li>
                 <li class="sidebar__item sidebar__item--bottom">
                     <a href="#" class="sidebar__link">Sign In</a>
@@ -88,6 +91,7 @@
             <figure class="card car--reverse-wrap">
                 <div class="card__content">
                     <header class="card__content-header">
+                        <span class="tag tag--blue">about</span>
                         <h1 class="card__title">Write your own content at any time !!</h1>
                     </header>
                     <p>
@@ -107,7 +111,7 @@
         </section>
 
         <section class="container container--left">
-            <article class="card">
+            <article class="card card--transparent">
                 <div class="card__hero card__hero--flattened">
                     <img src="./assets/images/image1.jpg" class="card__img"  width="500" height="150" alt="articulo">
                 </div>
@@ -117,6 +121,9 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Quo dolore a.
                         </h1>
+                        <span class="tag tag--blue">
+                            Curiosities
+                        </span>
                     </a>
                 </header>
                 <p class="card__content-body">
@@ -124,55 +131,110 @@
                     elit. Dicta veniam, recusandae ab ad nulla ullam ex commodi.
                 </p>
                 <footer class="card__content-footer">
-                    <address >
+                    <address>
                         <span clas>By</span>
                         <a rel="author" href="#">Will Smith</a>
                     </address>
                     <time datetime="2022-02-09" pubdate> December 09, 2022</time>
                 </footer>
             </article>
-            <article class="card">
+            <article class="card card--transparent">
+                <div class="card__hero card__hero--flattened">
+                    <img src="./assets/images/image2.jpg" class="card__img"  width="500" height="150" alt="articulo">
+                </div>
+                <header class="card__content-header">
+                    
+                    <a href="#" class="card__title-link">
+                        <h1>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Quo dolore a.
+                        </h1>
+                    </a>
+                    <span class="tag tag--blue">
+                        Curiosities
+                    </span>
+                </header>
+                <p class="card__content-body">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing
+                    elit. Dicta veniam, recusandae ab ad nulla ullam ex commodi.
+                </p>
+                <footer class="card__content-footer">
+                    <address>
+                        <span clas>By</span>
+                        <a rel="author" href="#">John Doe</a>
+                    </address>
+                    <time datetime="2022-02-12" pubdate> December 12, 2022</time>
+                </footer>
             </article>
         </section>
-      
     </main>
 
     <!-- FOOTER SECTION -->
-    <footer>
-        <div>
-            <div>
-                <h5>Follow Us</h5>
-                <div>
-                    <a href="#"><span class="fas fa-facebook"></span></a>
-                    <a href="#"><span class="fas fa-twitter-square"></span></a>
-                    <a href="#"><span class="fas fa-youtube-square"></span></a>
-                    <a href="#"><span class="fas fa-whatsapp-square"></span></a>
+    <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__content">
+                        <div>
+                            <h5 class="footer__title">Follow Us</h5>
+                        <div>
+                            <a href="#" class="footer__link footer__link--social"><span class="fab fa-facebook"></span></a>
+                            <a href="#" class="footer__link footer__link--social"><span class="fab fa-twitter"></span></a>
+                            <a href="#" class="footer__link footer__link--social"><span class="fab fa-youtube"></span></a>
+                            <a href="#" class="footer__link footer__link--social"><span class="fab fa-telegram"></span></a>
+                            <a href="#" class="footer__link footer__link--social"><span class="fab fa-twitch"></span></a>
+                        </div>
+                        </div>
+                        <div>
+                            <h1 class="footer__title">Subscribe</h1>
+                            <form action="" class="subscribe-form">
+                                <fieldset>
+                                    <input type="text" class="subscribe-form__email" id="email" name="email" placeholder="introduce your email" required>
+                                    <button type="submit" class="subscribe-form__button">
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button> 
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer__content">
+                        <h5 class="footer__title">Most Read</h5>
+                        <ul>
+                            <li><a href="#" class="footer__link">IPhone</a></li>
+                            <li><a href="#" class="footer__link">Entertainment</a></li>
+                            <li><a href="#" class="footer__link">Curiosities</a></li>
+                            <li><a href="#" class="footer__link">Social Media</a></li>
+                            <li><a href="#" class="footer__link">PC's</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__content">
+                        <h5 class="footer__title">Others</h5>
+                        <ul>
+                            <li><a href="#" class="footer__link">Reviews</a></li>
+                            <li><a href="#" class="footer__link">Authors</a></li>
+                            <li><a href="#" class="footer__link">Posts</a></li>
+                            <li><a href="#" class="footer__link">News</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__content">
+                        <h5 class="footer__title">Tags</h5>
+                        <ul>
+                            <li><a href="#" class="footer__link">IPhone</a></li>
+                            <li><a href="#" class="footer__link">Entertainment</a></li>
+                            <li><a href="#" class="footer__link">Curiosities</a></li>
+                            <li><a href="#" class="footer__link">Social Media</a></li>
+                            <li><a href="#" class="footer__link">PC's</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <a href="#">bryan.fernandez@assuresoftbolivia.com</a>
+                <div class="footer__bottom">
+                    <span class="footer__copyright">© 2022 Training Assuresoft | All rights reserved </span>
+                    <div>
+                        <a href="#" class="footer__link">Terms of use</a>
+                        <a href="#" class="footer__link">Privacy Policy</a>
+                        <a href="#" class="footer__link">Contact</a>
+                    </div>
+                </div>
             </div>
-            <div>
-                    <h5>Others</h5>
-                    <ul>
-                        <li><a href="#">Reviews</a></li>
-                        <li><a href="#">Authors</a></li>
-                        <li><a href="#">Posts</a></li>
-                        <li><a href="#">News</a></li>
-                    </ul>
-            </div>
-            <div>
-                <h5>Tags</h5>
-				<ul>
-                    <li><a href="#">IPhone</a></li>
-                    <li><a href="#">Entertainment</a></li>
-                    <li><a href="#">Curiosities</a></li>
-                    <li><a href="#">Social Media</a></li>
-                    <li><a href="#">PC's</a></li>
-                </ul>
-            </div>
-        </div>
-        <div>
-            <span>© 2022 Training Assuresoft</span>
-        </div>
     </footer>
     
     <div class="stickyshare stickyshare--show">
@@ -185,8 +247,7 @@
             <a class="stickyshare__social-link"><i class="fab fa-twitter"></i></a> 
             <a class="stickyshare__social-link"><i class="fab fa-youtube"></i></a>
         </div>
-      </div>
-
+    </div>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>

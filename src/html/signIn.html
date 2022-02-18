@@ -7,7 +7,6 @@
     <meta name="author" content="Bryan Fernandez">
     <meta name="description" content="This is a blog about technology, where everybody has access to post  any content related to.">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="./assets/css/styles.css">
     <title>TechnoCrazy</title>
 </head>
 <body>
@@ -44,10 +43,10 @@
                     </div>
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#" class="nav__link">Sign In</a>
+                            <a href="#" class="nav__link nav__link--active">Sign In</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="btn btn--primary">Sign Up</a>
+                            <a href="#" class="btn btn--outline-primary">Sign Up</a>
                         </li>
                     </ul>      
                 </div>
@@ -91,15 +90,10 @@
             <section class="auth-card">
                 <div class="auth-card__content">
                     <header class="auth-card__content-header">
-                        <h1 class="auth-card__title">Sign Up</h1>
+                        <h1 class="auth-card__title">Sign In</h1>
                     </header>
-                    <form id="register_form" class="auth-form">
+                    <form id="login_form" class="auth-form">
                         <fieldset>
-                            <div class="auth-form__input-group">
-                                <label for="name" class="auth-form__input-label">Name</label>
-                                <input id="name" type="text" class="auth-form__input"  placeholder="juan Perez">
-                                <span class="auth-form__error-message"></span>
-                            </div>    
                             <div class="auth-form__input-group">
                                 <label for="email" class="auth-form__input-label">Email</label>
                                 <input id="email" type="text" class="auth-form__input"  placeholder="juan.perez@example.com">
@@ -111,15 +105,15 @@
                                 <span class="auth-form__error-message"></span>
                             </div>  
                             <div class="auth-form__input-group">
-                                <label for="password" class="auth-form__input-label">Password Confirmation</label>
-                                <input id="password_validation" type="password" class="auth-form__input">
-                                <span class="auth-form__error-message"></span>
-                            </div>  
-                            <div class="auth-form__input-group">
-                                <button  type="submit" class="btn btn--primary btn--block">Register</button>
-                            </div>     
+                                <button  type="submit" class="btn btn--primary btn--block">Sign In</button>
+                            </div>    
+                            
                         </fieldset>
+                        
                     </form>
+                    <!-- <footer class="auth-card__content-footer">
+                        <a href="./about.html" class="btn btn--primary">Read More</a>
+                    </footer>                    -->
                 </div>
             </section>
         </section>
@@ -194,7 +188,8 @@
     </footer>
     
    
-    <script type="module" src="./assets/js/main.js"></script>
-    <script type="module" src="./assets/js/signUp.js"></script>
+    <!-- <script type="module" src="./assets/js/main.js"></script>
+    <script type="module" src="./assets/js/signIn.js"></script>
+     -->
 </body>
 </html>

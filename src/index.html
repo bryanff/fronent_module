@@ -7,7 +7,6 @@
     <meta name="author" content="Bryan Fernandez">
     <meta name="description" content="This is a blog about technology, where everybody has access to post  any content related to.">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="./assets/css/styles.css">
     <title>TechnoCrazy</title>
 </head>
 <body>
@@ -20,7 +19,7 @@
                     <a href="#" class="nav__brand">Technocrazy</a>
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="./index.html" class="nav__link">Home</a>
+                            <a href="#" class="nav__link nav__link--active">Home</a>
                         </li>
                         <li class="nav__item">
                             <a href="#" class="nav__link">Reviews</a>
@@ -44,10 +43,10 @@
                     </div>
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#" class="nav__link nav__link--active">Sign In</a>
+                            <a href="./signIn.html" class="nav__link">Sign In</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="btn btn--outline-primary">Sign Up</a>
+                            <a href="./signUp.html" class="btn btn--outline-primary">Sign Up</a>
                         </li>
                     </ul>      
                 </div>
@@ -88,35 +87,84 @@
 
     <main>
         <section class="container container--centered">
-            <section class="auth-card">
-                <div class="auth-card__content">
-                    <header class="auth-card__content-header">
-                        <h1 class="auth-card__title">Sign In</h1>
+            <figure class="card card--content-start card--reverse-wrap">
+                <div class="card__content">
+                    <header class="card__content-header">
+                        <span class="tag tag--blue">about</span>
+                        <h1 class="card__title">Write your own content at any time !!</h1>
                     </header>
-                    <form id="login_form" class="auth-form">
-                        <fieldset>
-                            <div class="auth-form__input-group">
-                                <label for="email" class="auth-form__input-label">Email</label>
-                                <input id="email" type="text" class="auth-form__input"  placeholder="juan.perez@example.com">
-                                <span class="auth-form__error-message"></span>
-                            </div>    
-                            <div class="auth-form__input-group">
-                                <label for="password" class="auth-form__input-label">Password</label>
-                                <input id="password" type="password" class="auth-form__input">
-                                <span class="auth-form__error-message"></span>
-                            </div>  
-                            <div class="auth-form__input-group">
-                                <button  type="submit" class="btn btn--primary btn--block">Sign In</button>
-                            </div>    
-                            
-                        </fieldset>
-                        
-                    </form>
-                    <!-- <footer class="auth-card__content-footer">
+                    <p>
+                        Technocrazy is an blog post where you can 
+                        write and read content from all over the world...!!!. get started with writing your
+                        own blog post.
+                    </p>
+                    <footer class="card__content-footer">
                         <a href="./about.html" class="btn btn--primary">Read More</a>
-                    </footer>                    -->
+                    </footer>
+                   
                 </div>
-            </section>
+                <div class="card__hero">
+                    <img src="./images/extreme-unboxing.jpg" alt="" class="card__img">
+                </div>
+            </figure>
+        </section>
+
+        <section class="container container--left">
+            <article class="card card--content-start card--transparent">
+                <div class="card__hero card__hero--flattened">
+                    <img src="./images/image1.jpg" class="card__img"  width="500" height="150" alt="articulo">
+                </div>
+                <header class="card__content-header">
+                    <a href="#" class="card__title-link">
+                        <h1>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Quo dolore a.
+                        </h1>
+                        <span class="tag tag--blue">
+                            Curiosities
+                        </span>
+                    </a>
+                </header>
+                <p class="card__content-body">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing
+                    elit. Dicta veniam, recusandae ab ad nulla ullam ex commodi.
+                </p>
+                <footer class="card__content-footer">
+                    <address>
+                        <span clas>By</span>
+                        <a rel="author" href="#">Will Smith</a>
+                    </address>
+                    <time datetime="2022-02-09" pubdate> December 09, 2022</time>
+                </footer>
+            </article>
+            <article class="card card--content-start card--transparent">
+                <div class="card__hero card__hero--flattened">
+                    <img src="./images/image2.jpg" class="card__img"  width="500" height="150" alt="articulo">
+                </div>
+                <header class="card__content-header">
+                    
+                    <a href="#" class="card__title-link">
+                        <h1>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Quo dolore a.
+                        </h1>
+                    </a>
+                    <span class="tag tag--blue">
+                        Curiosities
+                    </span>
+                </header>
+                <p class="card__content-body">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing
+                    elit. Dicta veniam, recusandae ab ad nulla ullam ex commodi.
+                </p>
+                <footer class="card__content-footer">
+                    <address>
+                        <span clas>By</span>
+                        <a rel="author" href="#">John Doe</a>
+                    </address>
+                    <time datetime="2022-02-12" pubdate> December 12, 2022</time>
+                </footer>
+            </article>
         </section>
     </main>
 
@@ -188,9 +236,17 @@
             </div>
     </footer>
     
-   
-    <script type="module" src="./assets/js/main.js"></script>
-    <script type="module" src="./assets/js/signIn.js"></script>
-    
+    <div class="stickyshare stickyshare--show">
+        <div class="stickyshare__rotate">
+            <span class="stickyshare__text">Share</span>
+        </div>
+        <div class="stickyshare__line"></div>
+        <div>
+            <a class="stickyshare__social-link"><i class="fab fa-facebook-f"></i></a> 
+            <a class="stickyshare__social-link"><i class="fab fa-twitter"></i></a> 
+            <a class="stickyshare__social-link"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
 </body>
 </html>

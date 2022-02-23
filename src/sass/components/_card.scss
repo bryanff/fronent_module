@@ -1,0 +1,171 @@
+$error-color: red;
+.card{
+    @include themed() {
+        background-color: t($content-color);
+    }
+    margin-top: 30px;
+    border-radius: 3px;
+    display: flex;
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    flex-wrap: wrap;
+    &--content-start{
+        justify-content: flex-start;
+    }
+    &--content-center{
+        justify-content: center;
+    }
+    &--md {
+        max-width: 400px;
+        min-width: 200px;
+    }
+    &--transparent{
+        background-color: transparent;
+    }
+    &--nowrap{
+        flex-wrap: nowrap;
+    }
+    &__img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+    &__hero{
+        flex: 1;
+        width:50%;
+        position: relative;
+        min-width: 50%;
+        &--flattened{
+            height: 150px;
+        }
+        &--square{
+            height: 100px;
+            width: 100px;
+        }
+    }
+    &__title-link{
+        text-decoration: none;
+        @include themed() {
+            color: t($text-color);
+        }
+        &:hover{
+            color: $red-color;
+            transition: all 0.5s ease;
+        }
+    }
+    &__content{
+        flex: 1;
+        width:50%;
+        padding: 2.5rem;
+        @include themed() {
+            color: t($text-color);
+        }
+        min-width: 255px;
+    }
+    &__content-header{
+        display: block;
+        align-items: flex-start;
+    }
+    &__content-body {
+        @include themed() {
+            color: t($text-color);
+        }
+        font-size: 1rem;
+        padding: 10px 10px;
+    }
+    &__content-footer{
+        align-items: flex-start;
+        @include themed() {
+            color: t($text-color);
+        }
+        margin: 30px 0;
+    }
+    &__title{
+        font-family:  "Helvetica Neue" "Arial" !important;
+        font-size: 2em;
+       margin-top: 20px;;
+    }
+ 
+    &--reverse-wrap{
+        flex-wrap: wrap-reverse;
+    }
+}
+
+
+.list-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__item{
+        width: 340px;
+    }
+}
+
+.auth-card {
+    @include themed() {
+        background-color: t($content-color);
+    }
+    margin-top: 30px;
+    border-radius: 3px;
+    display: flex;
+    justify-content:center;
+    width: 400px;
+    &__content-header {
+        margin-bottom: 10px;
+    }
+    &__content {
+        padding: 35px 35px 25px 25px;
+        @include themed() {
+            color: t($text-color);
+        }
+        width: 100%;
+    }
+    &__input-label {
+        display: block;
+        @include themed() {
+            color: t($text-color);
+        }
+        margin-bottom: .25rem;
+    }
+}
+
+.auth-form{
+    &__input-group {
+        margin-bottom: 15px;
+    }
+    &__submit {
+        background-color: $primary-color;
+    }
+    &__input {
+        appearance: none;
+        display: block;
+        width: 100%;
+        color: #2d3748;
+        border: 1px solid #cbd5e0;
+        line-height: 1.25;
+        background-color: white;
+        padding: .65rem .75rem;
+        border-radius: 0.25rem;
+        box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+        &::placeholder{
+            color: #a0aec0;
+        }        
+        &--error {
+            border: 1px solid $error-color;
+        }
+        &:hover{
+            outline: none;
+            border: 1px solid #a0aec0;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+            background-clip: padding-box;
+        }
+        
+    }
+    &__error-message {
+        font-size: .85rem;
+        color: $error-color;
+    }
+}

@@ -7,12 +7,12 @@
     <meta name="author" content="Bryan Fernandez">
     <meta name="description" content="This is a blog about technology, where everybody has access to post  any content related to.">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <title>TechnoCrazy | About</title>
 </head>
 <body>
-    <div class="theme theme--default">
-            <!-- HEADER SECTION -->
-    <header class="header">
+    <!-- HEADER SECTION -->
+    <header class="header header--default">
         <div class="container">
             <nav class="nav">
                 <span class="fas fa-bars sidebar__open-sidebar"></span>
@@ -20,7 +20,7 @@
                     <a href="#" class="nav__brand">Technocrazy</a>
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="../index.html" class="nav__link nav__link--active">Home</a>
+                            <a href="./index.html" class="nav__link">Home</a>
                         </li>
                         <li class="nav__item">
                             <a href="#" class="nav__link">Reviews</a>
@@ -29,7 +29,7 @@
                             <a href="#" class="nav__link">Categories</a>
                         </li>
                         <li class="nav__item">
-                            <a href="./about.html" class="nav__link">About</a>
+                            <a href="./about.html" class="nav__link  nav__link--active">About</a>
                         </li>
                     </ul>
                 </div>
@@ -44,10 +44,10 @@
                     </div>
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="./signIn.html" class="nav__link">Sign In</a>
+                            <a href="#" class="nav__link">Sign In</a>
                         </li>
                         <li class="nav__item">
-                            <a href="./signUp.html" class="btn btn--outline-primary">Sign Up</a>
+                            <a href="#" class="btn btn--outline-primary">Sign Up</a>
                         </li>
                     </ul>      
                 </div>
@@ -100,7 +100,7 @@
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, soluta et debitis enim, a odio ullam reprehenderit quo aspernatur iste atque sapiente in beatae repudiandae nobis ea nihil sit! Sapiente.
                     </p>
                     <div class="card__hero">
-                        <img src="../images/extreme-unboxing.jpg" alt="" class="card__img">
+                        <img src="./assets/images/extreme-unboxing.jpg" alt="" class="card__img">
                     </div>
                     <p class=""card__content-body>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptatum a,
@@ -115,73 +115,42 @@
     </main>
 
     <!-- FOOTER SECTION -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__wrapper">
-                <div class="footer__content">
-                    <div>
-                        <h5 class="footer__title">Follow Us</h5>
-                    <div>
-                        <a href="#" class="footer__link footer__link--social"><span class="fab fa-facebook"></span></a>
-                        <a href="#" class="footer__link footer__link--social"><span class="fab fa-twitter"></span></a>
-                        <a href="#" class="footer__link footer__link--social"><span class="fab fa-youtube"></span></a>
-                        <a href="#" class="footer__link footer__link--social"><span class="fab fa-telegram"></span></a>
-                        <a href="#" class="footer__link footer__link--social"><span class="fab fa-twitch"></span></a>
-                    </div>
-                    </div>
-                    <div>
-                        <h1 class="footer__title">Subscribe</h1>
-                        <form action="" class="subscribe-form">
-                            <fieldset>
-                                <input type="text" class="subscribe-form__email" id="email" name="email" placeholder="introduce your email" required>
-                                <button type="submit" class="subscribe-form__button">
-                                    <i class="fas fa-paper-plane"></i>
-                                </button> 
-                            </fieldset>
-                        </form>
-                    </div>
-                </div>
-                <div class="footer__content">
-                    <h5 class="footer__title">Most Read</h5>
-                    <ul>
-                        <li><a href="#" class="footer__link">IPhone</a></li>
-                        <li><a href="#" class="footer__link">Entertainment</a></li>
-                        <li><a href="#" class="footer__link">Curiosities</a></li>
-                        <li><a href="#" class="footer__link">Social Media</a></li>
-                        <li><a href="#" class="footer__link">PC's</a></li>
-                    </ul>
-                </div>
-                <div class="footer__content">
-                    <h5 class="footer__title">Others</h5>
-                    <ul>
-                        <li><a href="#" class="footer__link">Reviews</a></li>
-                        <li><a href="./authors.html" class="footer__link">Authors</a></li>
-                        <li><a href="#" class="footer__link">Posts</a></li>
-                        <li><a href="#" class="footer__link">News</a></li>
-                    </ul>
-                </div>
-                <div class="footer__content">
-                    <h5 class="footer__title">Tags</h5>
-                    <ul>
-                        <li><a href="#" class="footer__link">IPhone</a></li>
-                        <li><a href="#" class="footer__link">Entertainment</a></li>
-                        <li><a href="#" class="footer__link">Curiosities</a></li>
-                        <li><a href="#" class="footer__link">Social Media</a></li>
-                        <li><a href="#" class="footer__link">PC's</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer__bottom">
-                <span class="footer__copyright">© 2022 Training Assuresoft | All rights reserved </span>
+    <footer>
+        <div>
+            <div>
+                <h5>Follow Us</h5>
                 <div>
-                    <a href="#" class="footer__link">Terms of use</a>
-                    <a href="#" class="footer__link">Privacy Policy</a>
-                    <a href="#" class="footer__link">Contact</a>
+                    <a href="#"><span class="fas fa-facebook"></span></a>
+                    <a href="#"><span class="fas fa-twitter-square"></span></a>
+                    <a href="#"><span class="fas fa-youtube-square"></span></a>
+                    <a href="#"><span class="fas fa-whatsapp-square"></span></a>
                 </div>
+                <a href="#">bryan.fernandez@assuresoftbolivia.com</a>
+            </div>
+            <div>
+                <h5>Others</h5>
+                <ul>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Authors</a></li>
+                    <li><a href="#">Posts</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>Tags</h5>
+				<ul>
+                    <li><a href="#">IPhone</a></li>
+                    <li><a href="#">Entertainment</a></li>
+                    <li><a href="#">Curiosities</a></li>
+                    <li><a href="#">Social Media</a></li>
+                    <li><a href="#">PC's</a></li>
+                </ul>
             </div>
         </div>
+        <div>
+            <span>© 2022 Training Assuresoft</span>
+        </div>
     </footer>
-
     <div class="stickyshare stickyshare--show">
         <div class="stickyshare__rotate">
             <span class="stickyshare__text">Share</span>
@@ -192,8 +161,7 @@
             <a class="stickyshare__social-link"><i class="fab fa-twitter"></i></a> 
             <a class="stickyshare__social-link"><i class="fab fa-youtube"></i></a>
         </div>
-    </div>
-    </div>
-    
+      </div>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>

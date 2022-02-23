@@ -1,0 +1,209 @@
+
+@mixin navtools($text-color) {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    margin: 0 5px;
+    i {
+        position: absolute;
+        @include themed() {
+            color: t($text-color);
+        }
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+}
+
+@mixin dark-mode-action($opacity, $event) {
+    opacity: $opacity;
+    pointer-events:$event;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  @include themed() {
+    background-color: t($content-color);
+  }
+  z-index: $z-index-fixed;
+  box-shadow: 0px 0px 0 1px rgb(0 0 0 / 7%);
+}
+
+.nav{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 0;
+    transition: 0.25s linear;
+    &__search-box {
+        @include navtools($text-color);
+    }
+    &__dark-mode {
+        @include navtools($text-color);
+        &-moon{
+            @include dark-mode-action(1, auto);
+        }
+        &-sun{
+            @include dark-mode-action(0, none);
+        }
+        &--active{
+            @include dark-mode-action(1, auto)
+        }
+        &--active &-sun{
+            @include dark-mode-action(1, auto)
+        }
+        &--active &-moon{
+            @include dark-mode-action(0, none)
+        }
+    }
+    &__right-content, &__left-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__list{
+        align-items:center;
+        display:inline-flex;
+        @media screen and (max-width: $small) {
+            display: none;
+        }
+    }
+    &__item{
+        list-style: none;
+        display: inline-block;
+        margin: 0 5px;
+        &--outline{
+            white-space: inherit;
+            display: inline-block;
+            padding: 0.5rem 2rem; //20px 12px;
+            border: solid 1px;
+        }
+    }
+    
+    &__link{
+        position: relative;
+        text-decoration: none;
+        @include themed() {
+            color: t($text-color);
+        }
+        // color: $text-color;
+        font-weight: bolder;
+        font-family: 'Roboto',sans-serif;
+        text-transform: uppercase;
+        font-size: 0.7rem;//12px;
+        padding: 1em; //5px;
+        &:hover{
+            color: $primary-color-default;
+            transition: all 0.5s ease;
+        }
+        &--active{
+            @include themed() {
+                color: t($primary-color);
+            }
+        }
+    }
+    &__brand {
+        text-decoration: none;
+        @include themed() {
+            color: t($text-color);
+        }
+        font-family: DM Serif Text;
+        font-size: 2rem;//25px;
+        font-weight: 400;
+        @media screen and (max-width: $small) {
+            margin: 0;
+        }
+    }
+}
+
+.sidebar{
+    position:fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    @include themed() {
+        background-color: t($sidebar-color);
+    }
+    // background-color: $sidebar-color;
+    z-index: $z-index-fixed;
+    transition: all 0.2s linear;
+    box-shadow: 0px 0px 0 1px rgb(0 0 0 / 7%);
+    &__close-sidebar{
+        @include themed() {
+            color: t($text-color);
+        }
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    &__brand {
+        text-decoration: none;
+        @include themed() {
+            color: t($text-color);
+        }
+        font-family: DM Serif Text;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    &__container{
+        padding: 15px;
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__list{
+        padding-top: 60px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__item{
+        list-style: none;
+        display: block;
+        margin-top: 20px;
+        &--bottom{
+            position: relative;
+            top: 40vh;
+        }
+    }
+    &__link{
+        position: relative;
+        text-decoration: none;
+        @include themed() {
+            color: t($text-color);
+        }
+        font-weight: bolder;
+        font-family: 'Roboto',sans-serif;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        &--active{
+            color: $primary-color;
+        }
+    }
+    &__open-sidebar{
+        @include themed() {
+            color: t($text-color);
+        }
+        font-size: 1.3rem;
+        display:none;
+        cursor: pointer;
+        @media screen and (max-width: $small) {
+            display: block;
+        }
+    }
+    &--active{
+        @media screen and (max-width: $small) {
+            left: 0;
+        }
+    }
+    
+}

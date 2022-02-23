@@ -1,0 +1,40 @@
+
+.btn{
+    text-transform: uppercase;  
+    text-decoration: none;
+    font-size: 12px;
+    font-weight:bolder;
+    padding: 10px 35px;
+    border-radius: 3em;
+    border: 1px solid $primary-color-default;
+    cursor: pointer;
+    transition: all 100ms linear 0s;
+    &--outline-primary{
+        border: 1px solid $primary-color-default;
+        color: $primary-color-default;
+        &:hover{
+            @include themed() {
+                background-color: t($primary-color);
+            }
+            color: $white-color;
+        }
+    }
+    &--primary{
+        @include themed() {
+            background-color: t($primary-color);
+        }
+        color: $white-color;
+    }
+    &--block {
+        display: block;
+        width: 100%;
+    }    
+}
+
+.icon-btn{
+    background: none;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+    cursor: pointer;
+}

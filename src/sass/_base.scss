@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $main-font
+}
+
+// body{
+//     height: 100vh;
+//     @include themed() {
+//         background-color: t($body-color);
+//     }
+//     background-color: $body-color;
+//     min-height: 100vh;
+//     display: flex;
+//     flex-direction: column;
+// }
+
+.theme{
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+main{
+    padding-bottom: 50px;
+    @include themed() {
+        background-color: t($body-color);
+    }
+}
+
+fieldset{
+    border: 0px;
+}
+
+// .body-dark {
+//     --content-color:#34363c;
+//     --sidebar-color:#34363c;
+//     --body-color:#202124f2;
+//     --nav-color:#242526;
+//     --side-nav: #010718;
+//     --search-bar:#f2f2f2;
+//     --text-color: #bdc1c6;
+//     --Z-index-fixed: 100;
+//     --primary-color: #ef3f48;
+// }
+
+@mixin containerWidth($width, $margin) {
+    max-width: $width;
+    margin: $margin;
+}
+
+@mixin alignContainer($items, $content) {
+    display: flex;
+    align-items: $items;
+    justify-content:$content;
+}
+
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    @media screen and (max-width: $large) {
+        @include containerWidth(90vw, 0 60px);
+        // max-width: 90vw;
+        // margin: 0 60px;
+    }
+    @media screen and (max-width: $medium) {
+        @include containerWidth(800px, auto auto);
+        // max-width: 800px;
+        // margin: auto auto;
+    }
+    @media screen and (max-width: $small) {
+        @include containerWidth(540px, auto auto);
+        // max-width: 540px;
+        // margin: auto auto;
+    }
+    &--left{
+        @include alignContainer(center, flex-start);
+    }
+    &--centered {
+        @include alignContainer(center, center);
+    }
+}

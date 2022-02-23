@@ -7,11 +7,11 @@
     <meta name="author" content="Bryan Fernandez">
     <meta name="description" content="This is a blog about technology, where everybody has access to post  any content related to.">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="./assets/css/styles.css">
     <title>TechnoCrazy</title>
 </head>
 <body>
-    <!-- HEADER SECTION -->
+   <div class="theme theme--default">
+        <!-- HEADER SECTION -->
     <header class="header header--default">
         <div class="container">
             <nav class="nav">
@@ -20,7 +20,7 @@
                     <a href="#" class="nav__brand">Technocrazy</a>
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#" class="nav__link nav__link--active">Home</a>
+                            <a href="../index.html" class="nav__link">Home</a>
                         </li>
                         <li class="nav__item">
                             <a href="#" class="nav__link">Reviews</a>
@@ -44,7 +44,7 @@
                     </div>
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="./signIn.html" class="nav__link">Sign In</a>
+                            <a href="./signIn.html" class="nav__link nav__link--active">Sign In</a>
                         </li>
                         <li class="nav__item">
                             <a href="./signUp.html" class="btn btn--outline-primary">Sign Up</a>
@@ -87,86 +87,44 @@
     <!-- MAIN CONTENT -->
 
     <main>
-        <section class="container container--centered">
-            <figure class="card card--content-start card--reverse-wrap">
-                <div class="card__content">
-                    <header class="card__content-header">
-                        <span class="tag tag--blue">about</span>
-                        <h1 class="card__title">Write your own content at any time !!</h1>
-                    </header>
-                    <p>
-                        Technocrazy is an blog post where you can 
-                        write and read content from all over the world...!!!. get started with writing your
-                        own blog post.
-                    </p>
-                    <footer class="card__content-footer">
-                        <a href="./about.html" class="btn btn--primary">Read More</a>
-                    </footer>
-                   
-                </div>
-                <div class="card__hero">
-                    <img src="./assets/images/extreme-unboxing.jpg" alt="" class="card__img">
-                </div>
-            </figure>
-        </section>
-
-        <section class="container container--left">
-            <article class="card card--content-start card--transparent">
-                <div class="card__hero card__hero--flattened">
-                    <img src="./assets/images/image1.jpg" class="card__img"  width="500" height="150" alt="articulo">
-                </div>
-                <header class="card__content-header">
-                    <a href="#" class="card__title-link">
-                        <h1>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Quo dolore a.
-                        </h1>
-                        <span class="tag tag--blue">
-                            Curiosities
-                        </span>
-                    </a>
-                </header>
-                <p class="card__content-body">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit. Dicta veniam, recusandae ab ad nulla ullam ex commodi.
-                </p>
-                <footer class="card__content-footer">
-                    <address>
-                        <span clas>By</span>
-                        <a rel="author" href="#">Will Smith</a>
-                    </address>
-                    <time datetime="2022-02-09" pubdate> December 09, 2022</time>
-                </footer>
-            </article>
-            <article class="card card--content-start card--transparent">
-                <div class="card__hero card__hero--flattened">
-                    <img src="./assets/images/image2.jpg" class="card__img"  width="500" height="150" alt="articulo">
-                </div>
-                <header class="card__content-header">
-                    
-                    <a href="#" class="card__title-link">
-                        <h1>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Quo dolore a.
-                        </h1>
-                    </a>
-                    <span class="tag tag--blue">
-                        Curiosities
-                    </span>
-                </header>
-                <p class="card__content-body">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit. Dicta veniam, recusandae ab ad nulla ullam ex commodi.
-                </p>
-                <footer class="card__content-footer">
-                    <address>
-                        <span clas>By</span>
-                        <a rel="author" href="#">John Doe</a>
-                    </address>
-                    <time datetime="2022-02-12" pubdate> December 12, 2022</time>
-                </footer>
-            </article>
-        </section>
+        <div class="container">
+            <div class="list-card">
+                <author-card 
+                    class="list-card__item"
+                    name="Bryan Flores"
+                    photo="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    >
+                    <div slot="info">
+                        <p>Posts: 15</p>
+                        <p>Followers: 16</p>
+                        <p>Email: Bryan@exels.com</p>
+                    </div>
+                </author-card>
+                <author-card 
+                    class="list-card__item"
+                    name="Juan Perez"
+                    photo="https://wallpaperaccess.com/full/2213424.jpg"
+                    >
+                    <div slot="info">
+                        <p>Posts: 25</p>
+                        <p>Followers: 256</p>
+                        <p>Email: Juan@exels.com</p>
+                    </div>
+                </author-card>
+                <author-card 
+                    class="list-card__item"
+                    name="Xavier Rodriguez"
+                    photo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRij6dtiHizH96qpCOe8WeXXP3yLyQJkPdGVg&usqp=CAU"
+                    >
+                    <div slot="info">
+                        <p>Posts: 95</p>
+                        <p>Followers: 1150</p>
+                        <p>Email: Xavier@gmail.com</p>
+                    </div>
+                </author-card>
+            </div>
+            
+        </div>
     </main>
 
     <!-- FOOTER SECTION -->
@@ -210,7 +168,7 @@
                         <h5 class="footer__title">Others</h5>
                         <ul>
                             <li><a href="#" class="footer__link">Reviews</a></li>
-                            <li><a href="./authors.html" class="footer__link">Authors</a></li>
+                            <li><a href="#" class="footer__link">Authors</a></li>
                             <li><a href="#" class="footer__link">Posts</a></li>
                             <li><a href="#" class="footer__link">News</a></li>
                         </ul>
@@ -236,19 +194,11 @@
                 </div>
             </div>
     </footer>
+   </div>
     
-    <div class="stickyshare stickyshare--show">
-        <div class="stickyshare__rotate">
-            <span class="stickyshare__text">Share</span>
-        </div>
-        <div class="stickyshare__line"></div>
-        <div>
-            <a class="stickyshare__social-link"><i class="fab fa-facebook-f"></i></a> 
-            <a class="stickyshare__social-link"><i class="fab fa-twitter"></i></a> 
-            <a class="stickyshare__social-link"><i class="fab fa-youtube"></i></a>
-        </div>
-    </div>
-    <script type="module" src="./assets/js/main.js"></script>
+   
+    <!-- <script type="module" src="./assets/js/main.js"></script>
+    <script src="./assets/js/components/author-card.js"></script> -->
     
 </body>
 </html>

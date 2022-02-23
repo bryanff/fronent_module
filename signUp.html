@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bryan Fernandez">
+    <meta name="description" content="This is a blog about technology, where everybody has access to post  any content related to.">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>TechnoCrazy</title>
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header class="header header--default">
+        <div class="container">
+            <nav class="nav">
+                <span class="fas fa-bars sidebar__open-sidebar"></span>
+                <div class="nav__left-content">
+                    <a href="#" class="nav__brand">Technocrazy</a>
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="./index.html" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Reviews</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Categories</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./about.html" class="nav__link">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav__right-content">
+                    <div class="nav__dark-mode">
+                        <i class="fas fa-moon nav__dark-mode-moon"></i>
+                        <i class="fas fa-sun nav__dark-mode-sun" ></i>
+                    </div>
+                    <div class="nav__search-box">
+                        <i class="fas fa-x nav__mode-search "></i>
+                        <i class="fas fa-search nav__mode-search nav__dark-mode--active"></i>
+                    </div>
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Sign In</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="btn btn--primary">Sign Up</a>
+                        </li>
+                    </ul>      
+                </div>
+            </nav>
+        </div>
+    </header>
+     <!-- SIDEBAR CONTENT -->
+    <aside class="sidebar">
+        <section class="sidebar__container">
+            <header class="sidebar__header">
+                <a href="#" class="sidebar__brand">Technocrazy</a>
+                <span class="fas fa-times sidebar__close-sidebar"></span>
+            </header>
+            <ul class="sidebar__list">
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link sidebar__link--active">Home</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">Posts</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">Reviews</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">About</a>
+                </li>
+                <li class="sidebar__item sidebar__item--bottom">
+                    <a href="#" class="sidebar__link">Sign In</a>
+                </li>
+                <li class="sidebar__item sidebar__item--bottom">
+                    <a href="#" class="btn btn--outline-primary">Sign Up</a>
+                </li>
+            </ul>
+        </section>
+    </aside>
+    
+    <!-- MAIN CONTENT -->
+
+    <main>
+        <section class="container container--centered">
+            <section class="auth-card">
+                <div class="auth-card__content">
+                    <header class="auth-card__content-header">
+                        <h1 class="auth-card__title">Sign Up</h1>
+                    </header>
+                    <form id="register_form" class="auth-form">
+                        <fieldset>
+                            <div class="auth-form__input-group">
+                                <label for="name" class="auth-form__input-label">Name</label>
+                                <input id="name" type="text" class="auth-form__input"  placeholder="juan Perez">
+                                <span class="auth-form__error-message"></span>
+                            </div>    
+                            <div class="auth-form__input-group">
+                                <label for="email" class="auth-form__input-label">Email</label>
+                                <input id="email" type="text" class="auth-form__input"  placeholder="juan.perez@example.com">
+                                <span class="auth-form__error-message"></span>
+                            </div>    
+                            <div class="auth-form__input-group">
+                                <label for="password" class="auth-form__input-label">Password</label>
+                                <input id="password" type="password" class="auth-form__input">
+                                <span class="auth-form__error-message"></span>
+                            </div>  
+                            <div class="auth-form__input-group">
+                                <label for="password" class="auth-form__input-label">Password Confirmation</label>
+                                <input id="password_validation" type="password" class="auth-form__input">
+                                <span class="auth-form__error-message"></span>
+                            </div>  
+                            <div class="auth-form__input-group">
+                                <button  type="submit" class="btn btn--primary btn--block">Register</button>
+                            </div>     
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__content">
+                        <div>
+                            <h5 class="footer__title">Follow Us</h5>
+                        <div>
+                            <a href="#" class="footer__link footer__link--social"><span class="fab fa-facebook"></span></a>
+                            <a href="#" class="footer__link footer__link--social"><span class="fab fa-twitter"></span></a>
+                            <a href="#" class="footer__link footer__link--social"><span class="fab fa-youtube"></span></a>
+                            <a href="#" class="footer__link footer__link--social"><span class="fab fa-telegram"></span></a>
+                            <a href="#" class="footer__link footer__link--social"><span class="fab fa-twitch"></span></a>
+                        </div>
+                        </div>
+                        <div>
+                            <h1 class="footer__title">Subscribe</h1>
+                            <form action="" class="subscribe-form">
+                                <fieldset>
+                                    <input type="text" class="subscribe-form__email" id="email" name="email" placeholder="introduce your email" required>
+                                    <button type="submit" class="subscribe-form__button">
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button> 
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer__content">
+                        <h5 class="footer__title">Most Read</h5>
+                        <ul>
+                            <li><a href="#" class="footer__link">IPhone</a></li>
+                            <li><a href="#" class="footer__link">Entertainment</a></li>
+                            <li><a href="#" class="footer__link">Curiosities</a></li>
+                            <li><a href="#" class="footer__link">Social Media</a></li>
+                            <li><a href="#" class="footer__link">PC's</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__content">
+                        <h5 class="footer__title">Others</h5>
+                        <ul>
+                            <li><a href="#" class="footer__link">Reviews</a></li>
+                            <li><a href="./authors.html" class="footer__link">Authors</a></li>
+                            <li><a href="#" class="footer__link">Posts</a></li>
+                            <li><a href="#" class="footer__link">News</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__content">
+                        <h5 class="footer__title">Tags</h5>
+                        <ul>
+                            <li><a href="#" class="footer__link">IPhone</a></li>
+                            <li><a href="#" class="footer__link">Entertainment</a></li>
+                            <li><a href="#" class="footer__link">Curiosities</a></li>
+                            <li><a href="#" class="footer__link">Social Media</a></li>
+                            <li><a href="#" class="footer__link">PC's</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <span class="footer__copyright">© 2022 Training Assuresoft | All rights reserved </span>
+                    <div>
+                        <a href="#" class="footer__link">Terms of use</a>
+                        <a href="#" class="footer__link">Privacy Policy</a>
+                        <a href="#" class="footer__link">Contact</a>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    
+   
+    <script type="module" src="./assets/js/main.js"></script>
+    <script type="module" src="./assets/js/signUp.js"></script>
+</body>
+</html>
